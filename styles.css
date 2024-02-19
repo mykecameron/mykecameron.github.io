@@ -11,16 +11,19 @@ body {
 header {
   display: flex;
   align-items: center;
-  margin: 1em;
+  margin: 3em auto;
+  max-width: 90%;
 }
 
 header div {
   flex: auto;
-  max-width: 50%
+  max-width: 50%;
+  vertical-align: top;
 }
 
 .picture {
   padding-right: 1em;
+  text-align: center;
 }
 
 .picture img {
@@ -37,4 +40,8 @@ h1 {
 
 h2 {
   margin-bottom: 0.5em;
+}
+
+.bio {
+  align-self: stretch;
 }
