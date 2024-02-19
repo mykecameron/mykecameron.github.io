@@ -8,41 +8,50 @@ body {
   font-family: sans-serif;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  margin: 3em auto;
-  max-width: 90%;
-}
-
-header div {
-  flex: auto;
-  max-width: 50%;
-  vertical-align: top;
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  margin: 1rem auto;
 }
 
 .picture {
-  padding-right: 1em;
+  grid-column: 1;
+  grid-row: 1;
   text-align: center;
-  align-self: stretch;
+  border-right: 1px dashed #bbbbbb;
+  border-bottom: none;
+  padding-right: 1rem;
+  padding-bottom: 0;
+}
+
+.bio {
+  padding-left: 1rem;
+  padding-top: 0;
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .picture {
+    border-right: none;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .bio {
+    padding-top: 1rem;
+    padding-left: 0;
+  }
 }
 
 .picture img {
   max-width: 100%;
+  max-height: 100vh;
 }
 
-p {
-  margin-bottom: 1em;
-}
-
-h1 {
-  margin-bottom: 0.25em;
-}
-
-h2 {
-  margin-bottom: 0.5em;
-}
-
-.bio {
-  align-self: stretch;
+.bio .block {
+  margin-bottom: 1rem;
 }
