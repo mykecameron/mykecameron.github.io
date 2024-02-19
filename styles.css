@@ -52,6 +52,10 @@ body {
   max-height: 100vh;
 }
 
-.bio .block {
+.bio p {
+  margin-bottom: 1rem;
+}
+
+.bio h2 {
   margin-bottom: 1rem;
 }
