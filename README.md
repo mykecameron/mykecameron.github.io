@@ -28,3 +28,7 @@ python3 -m http.server 8000
 ```
 
 Then open <http://localhost:8000>. There's nothing to install or compile.
+
+## Copyright
+
+Copyright (c) 2023-2026 Myke Cameron. All rights reserved. See [LICENSE](LICENSE).
